@@ -39,7 +39,36 @@ class Solution {
         
     }
 }
-//kadanes algo
+//kadanes algo ...atleast 1 positive
+/*
+[-2,1,-3,4,-1,2,1,-5,4]
+
+working of algo
+ max_so_far=0
+ ans=0
+
+ 0.  max_so_far=0
+     ans=0 
+ 1.  max_so_far=1
+     ans=1
+ 2   max_so_far=0
+     ans=1
+ 3.  max_so_far=4
+     ans=4
+ 4.  max_so_far=3
+     ans=4
+ 5.  max_so_far=5
+     ans=5
+ 6.  max_so_far=6
+     ans=6
+ 7.  max_so_far=1
+     ans=6
+ 8.  max_so_far=4
+     ans=6
+ans =6
+
+
+*/
 class Solution {
     public int maxSubArray(int[] arr) {
         int n=arr.length;
